@@ -1,10 +1,9 @@
-<<<<<<< HEAD
 {
   "manifest_version":  2,
-  "name": "Google Dictionary",
+  "name": "Socrates",
   "version": "1.0",
-  "description": "English Dictionary",
-  "author":"Sridarshan Shetty",
+  "description": "BAMF App Ever",
+  "author":"Mark Vessalico, Elliot Boschwitz, Natalie Eisner, James Fangmeyer Jr",
   "options_page":"option.html",
   "browser_action": 
 	{
@@ -16,24 +15,4 @@
 		"http://*/"
   ]
 }
-=======
-{
-  "manifest_version": 2,
 
-  "name": "Socrates",
-  "description": "BAMF App Ever",
-  "version": "1.0",
-
-  "permissions": [
-    "https://secure.flickr.com/"
-  ],
-  "browser_action": {
-    "default_icon": "icon.png",
-    "default_popup": "popup.html"
-  },
-  "background": {
-    "scripts": ["popup.js"],
-    "persistent": false
-  }
-}
->>>>>>> 4f1e805f06980581e8da260cf5a81af7229df91e
