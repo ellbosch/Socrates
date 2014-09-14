@@ -46,6 +46,7 @@
     function getSourceOptions() {
         //$("#sourceOptionsDiv ul").html("");
         var isShowingSomething = false;
+        var isMoreThanOneSource = false;
 
         for (var prop in results) {
             var value = results[prop];
@@ -63,6 +64,12 @@
             } else {
                 $("#sourceOptionsDiv ul").find(id).hide();
             }
+        }
+
+        if (!isShowingSomething) {
+            $("#sourcesDiv #sourceBtn #navicon").hide();
+            var currentSource = $("#sourcesDiv #sourceBtn #currentSource");
+            currentSource.html("NO RESULTS FOUND");
         }
     }
 
@@ -250,7 +257,7 @@
         map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
     }
 
-    google.maps.event.addDomListener(window, 'load', initialize);
+    //google.maps.event.addDomListener(window, 'load', initialize);
 
     function showMap() {
         $("#container-socrates #mainContentDiv #content").prepend(map);
