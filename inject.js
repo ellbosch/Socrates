@@ -9,9 +9,8 @@ var injected = injected || (function(){
 
   // This method will eventually return
   // background colors from the current page.
-  methods.getBgColors = function(){
-    var nodes = document.querySelectorAll('*');
-    return nodes.length;
+  methods.toggleApp = function(){
+    return "this will toggle Socrates";
   };
 
   // This tells the script to listen for

@@ -6,15 +6,15 @@ function injectedMethod (tab, method, callback) {
   });
 }
 
-function getBgColors (tab) {
+function toggleApp (tab) {
   // When we get a result back from the getBgColors
   // method, alert the data
-  injectedMethod(tab, 'getBgColors', function (response) {
-    alert('Elements in tab: ' + response.data);
+  injectedMethod(tab, 'toggleApp', function (response) {
+    alert(response.data);
     return true;
   });
 }
 
-// When the browser action is clicked, call the
-// getBgColors function.
-chrome.browserAction.onClicked.addListener(getBgColors);
+// Listeners
+chrome.browserAction.onClicked.addListener(toggleApp);
+
