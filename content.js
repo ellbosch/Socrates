@@ -47,6 +47,7 @@
         //$("#sourceOptionsDiv ul").html("");
         var isShowingSomething = false;
         var isMoreThanOneSource = false;
+        $("#sourcesDiv #sourceBtn #navicon").show();
 
         for (var prop in results) {
             var value = results[prop];
